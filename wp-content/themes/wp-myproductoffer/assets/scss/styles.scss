@@ -1,0 +1,23 @@
+// 1. Variables
+
+@use 'variables' as *;
+
+// 2. Global Reset and Tipography
+
+@use 'global' as *;
+
+// 3. Animations
+
+@use 'animations' as *;
+
+// 4. Utilities
+
+@use 'utilities' as *;
+
+// 5. Responsive
+
+@use 'responsive' as *;
+
+// 5. Components
+
+@use 'components/index.scss' as *;

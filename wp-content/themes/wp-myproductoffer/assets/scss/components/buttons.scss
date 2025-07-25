@@ -1,0 +1,22 @@
+@use "sass:color";
+
+// Variables
+
+@use '../variables' as *;
+
+.btn {
+  display: inline-block;
+  background: $primary-color;
+  color: $white;
+  padding: 0.75rem 1.5rem;
+  border-radius: $border-radius;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 16px $shadow-light;
+  transition: transform $transition, box-shadow $transition;
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 24px $shadow-medium;
+    background: color.adjust($primary-color, $lightness: -5%);
+  }
+}

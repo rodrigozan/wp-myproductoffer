@@ -1,0 +1,22 @@
+// Variables
+
+@use '../variables' as *;
+
+.page-content, .single-product {
+  padding: 4rem 1rem;
+  article {
+    max-width: 800px;
+    margin: 0 auto;
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .product-content {
+      margin-bottom: 2rem;
+    }
+    .btn-lg {
+      display: inline-block;
+      margin-top: 1rem;
+    }
+  }
+}

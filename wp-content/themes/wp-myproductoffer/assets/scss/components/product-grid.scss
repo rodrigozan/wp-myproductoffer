@@ -1,0 +1,41 @@
+@use "sass:color";
+
+// Variables
+
+@use '../variables' as *;
+
+.product-grid {
+  .product-card {
+    background: $white;
+    border: 1px solid $gray-light;
+    border-radius: $border-radius;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px $shadow-light;
+    transition: transform $transition, box-shadow $transition;
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px $shadow-medium;
+    }
+    .product-thumb {
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+    .product-title {
+      font-size: 1.25rem;
+      margin: 1rem;
+      color: $gray-dark;
+    }
+    .product-excerpt {
+      margin: 0 1rem 1rem;
+      color: color.adjust($gray-dark, $lightness: -10%);
+    }
+    .btn-sm {
+      margin: 0 1rem 1rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+}

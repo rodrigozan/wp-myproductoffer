@@ -1,0 +1,7 @@
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  &.appear {
+    animation: fadeInUp 0.8s forwards;
+  }
+}

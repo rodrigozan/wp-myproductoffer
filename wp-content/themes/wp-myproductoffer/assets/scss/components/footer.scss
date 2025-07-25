@@ -1,0 +1,15 @@
+@use "sass:color";
+
+// Variables
+
+@use '../variables' as *;
+
+.site-footer {
+  background: color.adjust($gray-light, $lightness: -10%);
+  padding: 2rem 1rem;
+  text-align: center;
+  p {
+    color: $gray-dark;
+    font-size: 0.9rem;
+  }
+}

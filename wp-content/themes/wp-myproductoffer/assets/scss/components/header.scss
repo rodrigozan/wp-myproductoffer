@@ -1,0 +1,37 @@
+// Variables
+
+@use '../variables' as *;
+
+.site-header {
+  background: $white;
+  border-bottom: 1px solid $gray-light;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  .logo a {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: $primary-color;
+    text-decoration: none;
+  }
+  nav {
+    ul {
+      display: flex;
+      list-style: none;
+      li {
+        margin-left: 2rem;
+        a {
+          text-decoration: none;
+          color: $gray-dark;
+          font-weight: 500;
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
