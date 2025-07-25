@@ -1,0 +1,34 @@
+# Ignorar temas padrão do WordPress
+wp-content/themes/twentytwentyfive/
+wp-content/themes/twentytwentyfour/
+wp-content/themes/twentytwentythree/
+
+# Ignorar arquivos sensíveis e desnecessários
+*.log
+*.sql
+*.sqlite
+*.env
+.env.*
+.DS_Store
+Thumbs.db
+
+# Node, Sass e Yarn
+node_modules/
+.yarn/
+.yarnrc
+.sass-cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor configs e IDEs
+.vscode/
+.idea/
+
+# Docker volumes
+docker-compose.override.yml
+*.pid
+
+# Build de CSS 
+wp-content/themes/wp-myproductoffer/assets/css/styles.css
+wp-content/themes/wp-myproductoffer/assets/css/styles.css.map

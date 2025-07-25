@@ -1,0 +1,20 @@
+{
+  "name": "myproductoffer-dev",
+  "version": "1.0.0",
+  "description": "Local development environment for MyProductOffer WordPress theme using Docker.",
+  "scripts": {
+    "dev": "docker-compose up -d",
+    "stop": "docker-compose stop",
+    "down": "docker-compose down",
+    "restart": "docker-compose restart",
+    "logs": "docker-compose logs -f --tail=100",
+    "wpcli": "docker-compose exec wordpress wp",
+    "db": "docker-compose exec db mysql -u root -p",
+    "bash": "docker-compose exec wordpress bash",
+    "phpmyadmin": "open http://localhost:8080",
+    "wordpress": "open http://localhost:8000",
+      "sass": "sass --watch wp-content/themes/wp-myproductoffer/assets/scss/styles.scss:wp-content/themes/wp-myproductoffer/assets/css/styles.css"
+  },
+  "author": "Rod Zandonadi",
+  "license": "MIT"
+}
